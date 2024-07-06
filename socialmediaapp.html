@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Social sites</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="posts">
+            <h2>Recent Posts</h2>
+            <div class="post">
+                <img class="avatar" src="" alt="User Avatar">
+                <h3>Uday bhanu pratap</h3>
+                <p>hii everyone______.. .</p>
+                <video class="post-video" controls></video>
+                <button class="like-btn">Like</button>
+                <span class="like-count">0 Likes</span>
+
+                <!-- Comment section -->
+                <div class="comments">
+                    <h4>Comments</h4>
+                    <div class="comment-list">
+                        <!-- Comments will be dynamically added here -->
+                    </div>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Add a comment" class="comment-input">
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+            <!-- More posts will be dynamically added here -->
+        </section>
+        <section id="upload">
+            <h2>Go live </h2>
+            <form id="video-upload-form">
+                <input type="file" id="video-input" accept="video/*">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
